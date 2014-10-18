@@ -30,14 +30,18 @@ $(window).scroll(function() {
       $('nav a').removeClass('active');
       $('nav a:eq(2)').addClass('active');
       $('#barC').stop().animate({ left: '0px' });
+      $("#bye, #hold").show();
   } else {
         $('#barC').stop().animate({ left: '-1000px' });
+        $('#bye, #hold').hide();
     }
 
     ///Block D
     if ($(this).scrollTop() >= $('#blockD').offset().top - 25) {
       $('nav a').removeClass('active');
       $('nav a:eq(3)').addClass('active');
+  } else {
+
   }
 });
 
