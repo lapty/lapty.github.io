@@ -1,6 +1,4 @@
 'use strict';
-// generated on 2014-10-11 using generator-tiy-webapp 0.0.8
-
 // Require your modules
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
@@ -38,15 +36,26 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('extras', function () {
   return gulp.src(['app/*.*', '!app/*.html'], {dot: true})
     .pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function (cb) {
-  rimraf('.tmp', function () {
-    rimraf('dist', cb);
+  return $.cache.clearAll(cb, function() {
+    return rimraf('.tmp', function () {
+      return rimraf('dist', cb);
+    });
   });
+});
+
+gulp.task('clear', function () {
+  $.cache.clearAll();
 });
 
 gulp.task('connect', function () {
@@ -101,7 +110,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('build', ['html', 'images', 'extras'], function () {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

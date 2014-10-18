@@ -1,4 +1,3 @@
-
 //Scrolling functions
 $(window).scroll(function() {
 
@@ -6,9 +5,6 @@ $(window).scroll(function() {
     if ($(this).scrollTop() <= $('#blockA').offset().top - 25) {
         $( "nav" ).fadeOut(500);
     }
-
-
-
 
     ///Block A
     if ($(this).scrollTop() >= $('#blockA').offset().top - 25) {
