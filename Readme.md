@@ -1,9 +1,11 @@
 ## PORTFOLIO IN THE WORKS
 
-Still to do:
+<p>Still to do:</p>
 
-clean up social media
-link social media anchors
-separate resume page
-make ugly resume block beautiful somehow
-more flair at end
+<ul>
+<li>clean up social media</li>
+<li>all anchor links are broken</li>
+<li>separate resume page</li>
+<li>make ugly resume block beautiful...will require magic</li>
+<li>more flair!</li>
+</ul>
