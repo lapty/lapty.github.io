@@ -1,8 +1,3 @@
-## PORTFOLIO IN THE WORKS
+## PORTFOLIO v1
 
-<p>Still to do:</p>
-
-<ul>
-<li>make ugly resume block beautiful...will require magic</li>
-<li>more flair?</li>
-</ul>
+<p>Version 1</p>

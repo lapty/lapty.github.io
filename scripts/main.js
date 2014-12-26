@@ -79,4 +79,8 @@ $(function() {
         });
 
 
+var windowHeight = $(window).height();
+$('#nope, #blockD').height(windowHeight + 50);
+
+
     });
