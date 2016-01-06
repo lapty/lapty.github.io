@@ -21,7 +21,7 @@ $(window).scroll(function() {
       $( ".projectA, .projectB, .projectC, .projectD" ).removeClass('invis').addClass('vis popped');
       $('#barB').stop().animate({ left: '0px' });
   } else {
-      $('#barB').stop().animate({ left: '-1000px' });
+      $('#barB').stop().animate({ left: '-2000px' });
   }
 
 
@@ -32,7 +32,7 @@ $(window).scroll(function() {
       $('#barC').stop().animate({ left: '0px' });
       $("#bye, #hold").show();
   } else {
-        $('#barC').stop().animate({ left: '-1000px' });
+        $('#barC').stop().animate({ left: '-2000px' });
         $('#bye, #hold').hide();
     }
 
